@@ -1,0 +1,137 @@
+p cnf 136 136
+λ_asia_no λ_asia_yes 0
+λ_bronc_no λ_bronc_yes 0
+λ_dysp_no λ_dysp_yes 0
+λ_either_no λ_either_yes 0
+λ_lung_no λ_lung_yes 0
+λ_smoke_no λ_smoke_yes 0
+λ_tub_no λ_tub_yes 0
+λ_xray_no λ_xray_yes 0
+Θ_asia_no ~λ_asia_no 0
+Θ_asia_yes ~λ_asia_yes 0
+Θ_smoke_no ~λ_smoke_no 0
+Θ_smoke_yes ~λ_smoke_yes 0
+λ_asia_no ~Θ_asia_no 0
+λ_asia_no ~Θ_tub_no|asia_no 0
+λ_asia_no ~Θ_tub_yes|asia_no 0
+λ_asia_yes ~Θ_asia_yes 0
+λ_asia_yes ~Θ_tub_no|asia_yes 0
+λ_asia_yes ~Θ_tub_yes|asia_yes 0
+λ_bronc_no ~Θ_bronc_no|smoke_no 0
+λ_bronc_no ~Θ_bronc_no|smoke_yes 0
+λ_bronc_no ~Θ_dysp_no|either_no;bronc_no 0
+λ_bronc_no ~Θ_dysp_no|either_yes;bronc_no 0
+λ_bronc_no ~Θ_dysp_yes|either_no;bronc_no 0
+λ_bronc_no ~Θ_dysp_yes|either_yes;bronc_no 0
+λ_bronc_yes ~Θ_bronc_yes|smoke_no 0
+λ_bronc_yes ~Θ_bronc_yes|smoke_yes 0
+λ_bronc_yes ~Θ_dysp_no|either_no;bronc_yes 0
+λ_bronc_yes ~Θ_dysp_no|either_yes;bronc_yes 0
+λ_bronc_yes ~Θ_dysp_yes|either_no;bronc_yes 0
+λ_bronc_yes ~Θ_dysp_yes|either_yes;bronc_yes 0
+λ_dysp_no ~Θ_dysp_no|either_no;bronc_no 0
+λ_dysp_no ~Θ_dysp_no|either_no;bronc_yes 0
+λ_dysp_no ~Θ_dysp_no|either_yes;bronc_no 0
+λ_dysp_no ~Θ_dysp_no|either_yes;bronc_yes 0
+λ_dysp_yes ~Θ_dysp_yes|either_no;bronc_no 0
+λ_dysp_yes ~Θ_dysp_yes|either_no;bronc_yes 0
+λ_dysp_yes ~Θ_dysp_yes|either_yes;bronc_no 0
+λ_dysp_yes ~Θ_dysp_yes|either_yes;bronc_yes 0
+λ_either_no ~Θ_dysp_no|either_no;bronc_no 0
+λ_either_no ~Θ_dysp_no|either_no;bronc_yes 0
+λ_either_no ~Θ_dysp_yes|either_no;bronc_no 0
+λ_either_no ~Θ_dysp_yes|either_no;bronc_yes 0
+λ_either_no ~Θ_either_no|tub_no;lung_no 0
+λ_either_no ~Θ_either_no|tub_no;lung_yes 0
+λ_either_no ~Θ_either_no|tub_yes;lung_no 0
+λ_either_no ~Θ_either_no|tub_yes;lung_yes 0
+λ_either_no ~Θ_xray_no|either_no 0
+λ_either_no ~Θ_xray_yes|either_no 0
+λ_either_yes ~Θ_dysp_no|either_yes;bronc_no 0
+λ_either_yes ~Θ_dysp_no|either_yes;bronc_yes 0
+λ_either_yes ~Θ_dysp_yes|either_yes;bronc_no 0
+λ_either_yes ~Θ_dysp_yes|either_yes;bronc_yes 0
+λ_either_yes ~Θ_either_yes|tub_no;lung_no 0
+λ_either_yes ~Θ_either_yes|tub_no;lung_yes 0
+λ_either_yes ~Θ_either_yes|tub_yes;lung_no 0
+λ_either_yes ~Θ_either_yes|tub_yes;lung_yes 0
+λ_either_yes ~Θ_xray_no|either_yes 0
+λ_either_yes ~Θ_xray_yes|either_yes 0
+λ_lung_no ~Θ_either_no|tub_no;lung_no 0
+λ_lung_no ~Θ_either_no|tub_yes;lung_no 0
+λ_lung_no ~Θ_either_yes|tub_no;lung_no 0
+λ_lung_no ~Θ_either_yes|tub_yes;lung_no 0
+λ_lung_no ~Θ_lung_no|smoke_no 0
+λ_lung_no ~Θ_lung_no|smoke_yes 0
+λ_lung_yes ~Θ_either_no|tub_no;lung_yes 0
+λ_lung_yes ~Θ_either_no|tub_yes;lung_yes 0
+λ_lung_yes ~Θ_either_yes|tub_no;lung_yes 0
+λ_lung_yes ~Θ_either_yes|tub_yes;lung_yes 0
+λ_lung_yes ~Θ_lung_yes|smoke_no 0
+λ_lung_yes ~Θ_lung_yes|smoke_yes 0
+λ_smoke_no ~Θ_bronc_no|smoke_no 0
+λ_smoke_no ~Θ_bronc_yes|smoke_no 0
+λ_smoke_no ~Θ_lung_no|smoke_no 0
+λ_smoke_no ~Θ_lung_yes|smoke_no 0
+λ_smoke_no ~Θ_smoke_no 0
+λ_smoke_yes ~Θ_bronc_no|smoke_yes 0
+λ_smoke_yes ~Θ_bronc_yes|smoke_yes 0
+λ_smoke_yes ~Θ_lung_no|smoke_yes 0
+λ_smoke_yes ~Θ_lung_yes|smoke_yes 0
+λ_smoke_yes ~Θ_smoke_yes 0
+λ_tub_no ~Θ_either_no|tub_no;lung_no 0
+λ_tub_no ~Θ_either_no|tub_no;lung_yes 0
+λ_tub_no ~Θ_either_yes|tub_no;lung_no 0
+λ_tub_no ~Θ_either_yes|tub_no;lung_yes 0
+λ_tub_no ~Θ_tub_no|asia_no 0
+λ_tub_no ~Θ_tub_no|asia_yes 0
+λ_tub_yes ~Θ_either_no|tub_yes;lung_no 0
+λ_tub_yes ~Θ_either_no|tub_yes;lung_yes 0
+λ_tub_yes ~Θ_either_yes|tub_yes;lung_no 0
+λ_tub_yes ~Θ_either_yes|tub_yes;lung_yes 0
+λ_tub_yes ~Θ_tub_yes|asia_no 0
+λ_tub_yes ~Θ_tub_yes|asia_yes 0
+λ_xray_no ~Θ_xray_no|either_no 0
+λ_xray_no ~Θ_xray_no|either_yes 0
+λ_xray_yes ~Θ_xray_yes|either_no 0
+λ_xray_yes ~Θ_xray_yes|either_yes 0
+~λ_asia_no ~λ_asia_yes 0
+~λ_bronc_no ~λ_bronc_yes 0
+~λ_dysp_no ~λ_dysp_yes 0
+~λ_either_no ~λ_either_yes 0
+~λ_lung_no ~λ_lung_yes 0
+~λ_smoke_no ~λ_smoke_yes 0
+~λ_tub_no ~λ_tub_yes 0
+~λ_xray_no ~λ_xray_yes 0
+Θ_bronc_no|smoke_no ~λ_bronc_no ~λ_smoke_no 0
+Θ_bronc_no|smoke_yes ~λ_bronc_no ~λ_smoke_yes 0
+Θ_bronc_yes|smoke_no ~λ_bronc_yes ~λ_smoke_no 0
+Θ_bronc_yes|smoke_yes ~λ_bronc_yes ~λ_smoke_yes 0
+Θ_lung_no|smoke_no ~λ_lung_no ~λ_smoke_no 0
+Θ_lung_no|smoke_yes ~λ_lung_no ~λ_smoke_yes 0
+Θ_lung_yes|smoke_no ~λ_lung_yes ~λ_smoke_no 0
+Θ_lung_yes|smoke_yes ~λ_lung_yes ~λ_smoke_yes 0
+Θ_tub_no|asia_no ~λ_asia_no ~λ_tub_no 0
+Θ_tub_no|asia_yes ~λ_asia_yes ~λ_tub_no 0
+Θ_tub_yes|asia_no ~λ_asia_no ~λ_tub_yes 0
+Θ_tub_yes|asia_yes ~λ_asia_yes ~λ_tub_yes 0
+Θ_xray_no|either_no ~λ_either_no ~λ_xray_no 0
+Θ_xray_no|either_yes ~λ_either_yes ~λ_xray_no 0
+Θ_xray_yes|either_no ~λ_either_no ~λ_xray_yes 0
+Θ_xray_yes|either_yes ~λ_either_yes ~λ_xray_yes 0
+Θ_dysp_no|either_no;bronc_no ~λ_bronc_no ~λ_dysp_no ~λ_either_no 0
+Θ_dysp_no|either_no;bronc_yes ~λ_bronc_yes ~λ_dysp_no ~λ_either_no 0
+Θ_dysp_no|either_yes;bronc_no ~λ_bronc_no ~λ_dysp_no ~λ_either_yes 0
+Θ_dysp_no|either_yes;bronc_yes ~λ_bronc_yes ~λ_dysp_no ~λ_either_yes 0
+Θ_dysp_yes|either_no;bronc_no ~λ_bronc_no ~λ_dysp_yes ~λ_either_no 0
+Θ_dysp_yes|either_no;bronc_yes ~λ_bronc_yes ~λ_dysp_yes ~λ_either_no 0
+Θ_dysp_yes|either_yes;bronc_no ~λ_bronc_no ~λ_dysp_yes ~λ_either_yes 0
+Θ_dysp_yes|either_yes;bronc_yes ~λ_bronc_yes ~λ_dysp_yes ~λ_either_yes 0
+Θ_either_no|tub_no;lung_no ~λ_either_no ~λ_lung_no ~λ_tub_no 0
+Θ_either_no|tub_no;lung_yes ~λ_either_no ~λ_lung_yes ~λ_tub_no 0
+Θ_either_no|tub_yes;lung_no ~λ_either_no ~λ_lung_no ~λ_tub_yes 0
+Θ_either_no|tub_yes;lung_yes ~λ_either_no ~λ_lung_yes ~λ_tub_yes 0
+Θ_either_yes|tub_no;lung_no ~λ_either_yes ~λ_lung_no ~λ_tub_no 0
+Θ_either_yes|tub_no;lung_yes ~λ_either_yes ~λ_lung_yes ~λ_tub_no 0
+Θ_either_yes|tub_yes;lung_no ~λ_either_yes ~λ_lung_no ~λ_tub_yes 0
+Θ_either_yes|tub_yes;lung_yes ~λ_either_yes ~λ_lung_yes ~λ_tub_yes 0

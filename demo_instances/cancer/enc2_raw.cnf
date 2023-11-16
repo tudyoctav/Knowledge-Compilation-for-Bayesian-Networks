@@ -1,0 +1,31 @@
+p cnf 30 30
+λ_Cancer_False λ_Cancer_True 0
+λ_Dyspnoea_False λ_Dyspnoea_True 0
+λ_Pollution_high λ_Pollution_low 0
+λ_Pollution_high ρ_Pollution_low| 0
+λ_Smoker_False λ_Smoker_True 0
+λ_Smoker_False ρ_Smoker_True| 0
+λ_Xray_negative λ_Xray_positive 0
+λ_Pollution_low ~ρ_Pollution_low| 0
+λ_Smoker_True ~ρ_Smoker_True| 0
+~λ_Cancer_False ~λ_Cancer_True 0
+~λ_Dyspnoea_False ~λ_Dyspnoea_True 0
+~λ_Pollution_high ~λ_Pollution_low 0
+~λ_Smoker_False ~λ_Smoker_True 0
+~λ_Xray_negative ~λ_Xray_positive 0
+λ_Dyspnoea_False ρ_Dyspnoea_True|Cancer_False ~λ_Cancer_False 0
+λ_Dyspnoea_False ρ_Dyspnoea_True|Cancer_True ~λ_Cancer_True 0
+λ_Xray_negative ρ_Xray_positive|Cancer_False ~λ_Cancer_False 0
+λ_Xray_negative ρ_Xray_positive|Cancer_True ~λ_Cancer_True 0
+λ_Dyspnoea_True ~λ_Cancer_False ~ρ_Dyspnoea_True|Cancer_False 0
+λ_Dyspnoea_True ~λ_Cancer_True ~ρ_Dyspnoea_True|Cancer_True 0
+λ_Xray_positive ~λ_Cancer_False ~ρ_Xray_positive|Cancer_False 0
+λ_Xray_positive ~λ_Cancer_True ~ρ_Xray_positive|Cancer_True 0
+λ_Cancer_False ρ_Cancer_True|Smoker_False;Pollution_high ~λ_Pollution_high ~λ_Smoker_False 0
+λ_Cancer_False ρ_Cancer_True|Smoker_False;Pollution_low ~λ_Pollution_low ~λ_Smoker_False 0
+λ_Cancer_False ρ_Cancer_True|Smoker_True;Pollution_high ~λ_Pollution_high ~λ_Smoker_True 0
+λ_Cancer_False ρ_Cancer_True|Smoker_True;Pollution_low ~λ_Pollution_low ~λ_Smoker_True 0
+λ_Cancer_True ~λ_Pollution_high ~λ_Smoker_False ~ρ_Cancer_True|Smoker_False;Pollution_high 0
+λ_Cancer_True ~λ_Pollution_high ~λ_Smoker_True ~ρ_Cancer_True|Smoker_True;Pollution_high 0
+λ_Cancer_True ~λ_Pollution_low ~λ_Smoker_False ~ρ_Cancer_True|Smoker_False;Pollution_low 0
+λ_Cancer_True ~λ_Pollution_low ~λ_Smoker_True ~ρ_Cancer_True|Smoker_True;Pollution_low 0

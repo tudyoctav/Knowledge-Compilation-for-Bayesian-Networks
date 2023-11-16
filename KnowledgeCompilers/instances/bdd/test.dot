@@ -1,0 +1,14 @@
+digraph test{
+      rankdir=TB;
+      size="8,5";
+      node [fontname="Arial"];
+
+     1 [label="False", color=red, shape=square];
+     2 [label="True", color=green, shape=square];
+     3 [label="2"];
+     3 -> 1 [style=dotted];
+     3 -> 2;
+      {rank=same; 1; 2; }
+      {rank=same; }
+      {rank=same; 3; }
+}

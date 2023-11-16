@@ -1,0 +1,31 @@
+p cnf 30 30
+λ_Alarm_0 λ_Alarm_1 0
+λ_Burglary_0 λ_Burglary_1 0
+λ_Burglary_1 ρ_Burglary_0| 0
+λ_Earthquake_0 λ_Earthquake_1 0
+λ_Earthquake_1 ρ_Earthquake_0| 0
+λ_JohnCalls_0 λ_JohnCalls_1 0
+λ_MaryCalls_0 λ_MaryCalls_1 0
+λ_Burglary_0 ~ρ_Burglary_0| 0
+λ_Earthquake_0 ~ρ_Earthquake_0| 0
+~λ_Alarm_0 ~λ_Alarm_1 0
+~λ_Burglary_0 ~λ_Burglary_1 0
+~λ_Earthquake_0 ~λ_Earthquake_1 0
+~λ_JohnCalls_0 ~λ_JohnCalls_1 0
+~λ_MaryCalls_0 ~λ_MaryCalls_1 0
+λ_JohnCalls_1 ρ_JohnCalls_0|Alarm_0 ~λ_Alarm_0 0
+λ_JohnCalls_1 ρ_JohnCalls_0|Alarm_1 ~λ_Alarm_1 0
+λ_MaryCalls_1 ρ_MaryCalls_0|Alarm_0 ~λ_Alarm_0 0
+λ_MaryCalls_1 ρ_MaryCalls_0|Alarm_1 ~λ_Alarm_1 0
+λ_JohnCalls_0 ~λ_Alarm_0 ~ρ_JohnCalls_0|Alarm_0 0
+λ_JohnCalls_0 ~λ_Alarm_1 ~ρ_JohnCalls_0|Alarm_1 0
+λ_MaryCalls_0 ~λ_Alarm_0 ~ρ_MaryCalls_0|Alarm_0 0
+λ_MaryCalls_0 ~λ_Alarm_1 ~ρ_MaryCalls_0|Alarm_1 0
+λ_Alarm_1 ρ_Alarm_0|Earthquake_0;Burglary_0 ~λ_Burglary_0 ~λ_Earthquake_0 0
+λ_Alarm_1 ρ_Alarm_0|Earthquake_0;Burglary_1 ~λ_Burglary_1 ~λ_Earthquake_0 0
+λ_Alarm_1 ρ_Alarm_0|Earthquake_1;Burglary_0 ~λ_Burglary_0 ~λ_Earthquake_1 0
+λ_Alarm_1 ρ_Alarm_0|Earthquake_1;Burglary_1 ~λ_Burglary_1 ~λ_Earthquake_1 0
+λ_Alarm_0 ~λ_Burglary_0 ~λ_Earthquake_0 ~ρ_Alarm_0|Earthquake_0;Burglary_0 0
+λ_Alarm_0 ~λ_Burglary_0 ~λ_Earthquake_1 ~ρ_Alarm_0|Earthquake_1;Burglary_0 0
+λ_Alarm_0 ~λ_Burglary_1 ~λ_Earthquake_0 ~ρ_Alarm_0|Earthquake_0;Burglary_1 0
+λ_Alarm_0 ~λ_Burglary_1 ~λ_Earthquake_1 ~ρ_Alarm_0|Earthquake_1;Burglary_1 0

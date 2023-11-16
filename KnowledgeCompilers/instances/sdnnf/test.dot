@@ -1,0 +1,16 @@
+graph instances{
+      rankdir=TB;
+      size="8,5";
+      node [fontname="Arial"];
+
+      AND2 [shape=square, label="AND"];
+      AND2 -- 1;
+      AND2 -- 2;
+      AND4 [shape=square, label="AND"];
+      AND4 -- -1;
+      AND4 -- 2;
+      OR5 [shape=diamond, label="OR"];
+      OR5 -- AND2;
+      OR5 -- AND4;
+      {rank=same;1; 2; -1; }
+}

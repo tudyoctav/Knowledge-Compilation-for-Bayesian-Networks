@@ -1,0 +1,75 @@
+p cnf 74 74
+λ_Alarm_0 λ_Alarm_1 0
+λ_Burglary_0 λ_Burglary_1 0
+λ_Earthquake_0 λ_Earthquake_1 0
+λ_JohnCalls_0 λ_JohnCalls_1 0
+λ_MaryCalls_0 λ_MaryCalls_1 0
+Θ_Burglary_0 ~λ_Burglary_0 0
+Θ_Burglary_1 ~λ_Burglary_1 0
+Θ_Earthquake_0 ~λ_Earthquake_0 0
+Θ_Earthquake_1 ~λ_Earthquake_1 0
+λ_Alarm_0 ~Θ_Alarm_0|Earthquake_0;Burglary_0 0
+λ_Alarm_0 ~Θ_Alarm_0|Earthquake_0;Burglary_1 0
+λ_Alarm_0 ~Θ_Alarm_0|Earthquake_1;Burglary_0 0
+λ_Alarm_0 ~Θ_Alarm_0|Earthquake_1;Burglary_1 0
+λ_Alarm_0 ~Θ_JohnCalls_0|Alarm_0 0
+λ_Alarm_0 ~Θ_JohnCalls_1|Alarm_0 0
+λ_Alarm_0 ~Θ_MaryCalls_0|Alarm_0 0
+λ_Alarm_0 ~Θ_MaryCalls_1|Alarm_0 0
+λ_Alarm_1 ~Θ_Alarm_1|Earthquake_0;Burglary_0 0
+λ_Alarm_1 ~Θ_Alarm_1|Earthquake_0;Burglary_1 0
+λ_Alarm_1 ~Θ_Alarm_1|Earthquake_1;Burglary_0 0
+λ_Alarm_1 ~Θ_Alarm_1|Earthquake_1;Burglary_1 0
+λ_Alarm_1 ~Θ_JohnCalls_0|Alarm_1 0
+λ_Alarm_1 ~Θ_JohnCalls_1|Alarm_1 0
+λ_Alarm_1 ~Θ_MaryCalls_0|Alarm_1 0
+λ_Alarm_1 ~Θ_MaryCalls_1|Alarm_1 0
+λ_Burglary_0 ~Θ_Alarm_0|Earthquake_0;Burglary_0 0
+λ_Burglary_0 ~Θ_Alarm_0|Earthquake_1;Burglary_0 0
+λ_Burglary_0 ~Θ_Alarm_1|Earthquake_0;Burglary_0 0
+λ_Burglary_0 ~Θ_Alarm_1|Earthquake_1;Burglary_0 0
+λ_Burglary_0 ~Θ_Burglary_0 0
+λ_Burglary_1 ~Θ_Alarm_0|Earthquake_0;Burglary_1 0
+λ_Burglary_1 ~Θ_Alarm_0|Earthquake_1;Burglary_1 0
+λ_Burglary_1 ~Θ_Alarm_1|Earthquake_0;Burglary_1 0
+λ_Burglary_1 ~Θ_Alarm_1|Earthquake_1;Burglary_1 0
+λ_Burglary_1 ~Θ_Burglary_1 0
+λ_Earthquake_0 ~Θ_Alarm_0|Earthquake_0;Burglary_0 0
+λ_Earthquake_0 ~Θ_Alarm_0|Earthquake_0;Burglary_1 0
+λ_Earthquake_0 ~Θ_Alarm_1|Earthquake_0;Burglary_0 0
+λ_Earthquake_0 ~Θ_Alarm_1|Earthquake_0;Burglary_1 0
+λ_Earthquake_0 ~Θ_Earthquake_0 0
+λ_Earthquake_1 ~Θ_Alarm_0|Earthquake_1;Burglary_0 0
+λ_Earthquake_1 ~Θ_Alarm_0|Earthquake_1;Burglary_1 0
+λ_Earthquake_1 ~Θ_Alarm_1|Earthquake_1;Burglary_0 0
+λ_Earthquake_1 ~Θ_Alarm_1|Earthquake_1;Burglary_1 0
+λ_Earthquake_1 ~Θ_Earthquake_1 0
+λ_JohnCalls_0 ~Θ_JohnCalls_0|Alarm_0 0
+λ_JohnCalls_0 ~Θ_JohnCalls_0|Alarm_1 0
+λ_JohnCalls_1 ~Θ_JohnCalls_1|Alarm_0 0
+λ_JohnCalls_1 ~Θ_JohnCalls_1|Alarm_1 0
+λ_MaryCalls_0 ~Θ_MaryCalls_0|Alarm_0 0
+λ_MaryCalls_0 ~Θ_MaryCalls_0|Alarm_1 0
+λ_MaryCalls_1 ~Θ_MaryCalls_1|Alarm_0 0
+λ_MaryCalls_1 ~Θ_MaryCalls_1|Alarm_1 0
+~λ_Alarm_0 ~λ_Alarm_1 0
+~λ_Burglary_0 ~λ_Burglary_1 0
+~λ_Earthquake_0 ~λ_Earthquake_1 0
+~λ_JohnCalls_0 ~λ_JohnCalls_1 0
+~λ_MaryCalls_0 ~λ_MaryCalls_1 0
+Θ_JohnCalls_0|Alarm_0 ~λ_Alarm_0 ~λ_JohnCalls_0 0
+Θ_JohnCalls_0|Alarm_1 ~λ_Alarm_1 ~λ_JohnCalls_0 0
+Θ_JohnCalls_1|Alarm_0 ~λ_Alarm_0 ~λ_JohnCalls_1 0
+Θ_JohnCalls_1|Alarm_1 ~λ_Alarm_1 ~λ_JohnCalls_1 0
+Θ_MaryCalls_0|Alarm_0 ~λ_Alarm_0 ~λ_MaryCalls_0 0
+Θ_MaryCalls_0|Alarm_1 ~λ_Alarm_1 ~λ_MaryCalls_0 0
+Θ_MaryCalls_1|Alarm_0 ~λ_Alarm_0 ~λ_MaryCalls_1 0
+Θ_MaryCalls_1|Alarm_1 ~λ_Alarm_1 ~λ_MaryCalls_1 0
+Θ_Alarm_0|Earthquake_0;Burglary_0 ~λ_Alarm_0 ~λ_Burglary_0 ~λ_Earthquake_0 0
+Θ_Alarm_0|Earthquake_0;Burglary_1 ~λ_Alarm_0 ~λ_Burglary_1 ~λ_Earthquake_0 0
+Θ_Alarm_0|Earthquake_1;Burglary_0 ~λ_Alarm_0 ~λ_Burglary_0 ~λ_Earthquake_1 0
+Θ_Alarm_0|Earthquake_1;Burglary_1 ~λ_Alarm_0 ~λ_Burglary_1 ~λ_Earthquake_1 0
+Θ_Alarm_1|Earthquake_0;Burglary_0 ~λ_Alarm_1 ~λ_Burglary_0 ~λ_Earthquake_0 0
+Θ_Alarm_1|Earthquake_0;Burglary_1 ~λ_Alarm_1 ~λ_Burglary_1 ~λ_Earthquake_0 0
+Θ_Alarm_1|Earthquake_1;Burglary_0 ~λ_Alarm_1 ~λ_Burglary_0 ~λ_Earthquake_1 0
+Θ_Alarm_1|Earthquake_1;Burglary_1 ~λ_Alarm_1 ~λ_Burglary_1 ~λ_Earthquake_1 0
